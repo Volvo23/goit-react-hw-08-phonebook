@@ -1,0 +1,2 @@
+(this.webpackJsonpphoneBook8=this.webpackJsonpphoneBook8||[]).push([[1],{96:function(e,n,o){"use strict";o.r(n);var t=o(1);o(0);n.default=function(){return Object(t.jsx)("div",{children:Object(t.jsx)("h1",{children:" Hello!!!"})})}}}]);
+//# sourceMappingURL=HomePage.d4be247a.chunk.js.map
