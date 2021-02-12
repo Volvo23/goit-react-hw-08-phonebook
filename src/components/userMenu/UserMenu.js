@@ -1,41 +1,27 @@
-/*
- * TODO: Подписаться на name и avatar https://icon-library.net/images/avatar-icon-images/avatar-icon-images-7.jpg
- * TODO: диспатч операцию logout
- */
 import React from "react";
-import { connect } from "react-redux";
-import { authSelectors, authOperations } from "../../redux/auth";
+import { useDispatch } from "react-redux";
+import { logOut } from "../../redux/operation/authOperation";
+// import { getUserName } from "../../redux/selectors/authSelector";
+import s from "./UserMenu.module.css";
 
-const styles = {
-  container: {
-    display: "flex",
-    alignItems: "center",
-  },
-  avatar: {
-    marginRight: 4,
-  },
-  name: {
-    fontWeight: 700,
-    marginRight: 12,
-  },
+const UserMenu = () => {
+  const dispatch = useDispatch();
+
+  const onLogout = () => dispatch(logOut());
+
+  return (
+    <div className={s.headerr}>
+      <img
+        src="https://i.ibb.co/QKh1Njr/pngkey-com-funny-png-111267.png"
+        alt="avatar-icon"
+        width="32"
+      />
+      <span className={s.welcome}>Welcome</span>
+      <button className={s.button} type="button" onClick={onLogout}>
+        Logout
+      </button>
+    </div>
+  );
 };
 
-const UserMenu = ({ avatar, name, onLogout }) => (
-  <div style={styles.container}>
-    <img src={avatar} alt="" width="32" style={styles.avatar} />
-    <span style={styles.name}>Welcome, {name}</span>
-    <button type="button" onClick={onLogout}>
-      Logout
-    </button>
-  </div>
-);
-
-const mapStateToProps = (state) => ({
-  name: authSelectors.getUserName(state),
-  avatar:
-    "https://icon-library.net/images/avatar-icon-images/avatar-icon-images-7.jpg",
-});
-
-export default connect(mapStateToProps, { onLogout: authOperations.logOut })(
-  UserMenu
-);
+export default UserMenu;

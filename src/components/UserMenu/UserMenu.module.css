@@ -1,0 +1,29 @@
+.headerr {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 64px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.button {
+  width: 100px;
+  height: 30px;
+  outline: none;
+  border: 1px solid green;
+
+  cursor: pointer;
+  font-size: 20px;
+  background-color: black;
+  color: greenyellow;
+}
+.welcome {
+  padding: 10px;
+  color: greenyellow;
+}

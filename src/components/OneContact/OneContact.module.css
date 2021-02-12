@@ -1,0 +1,32 @@
+.listItem {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 60px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-shadow: 0px 3px 5px black;
+}
+.contactName,
+.contactNumber {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 20px;
+  color: yellowgreen;
+}
+.deleteButton {
+  width: 100px;
+  height: 30px;
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+  font-size: 20px;
+  background-color: green;
+}
+.deleteButton:hover,
+.deleteButton:focus {
+  background-color: greenyellow;
+}

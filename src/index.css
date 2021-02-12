@@ -1,36 +1,28 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body {
   margin: 0;
-  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fff;
-  color: #212121;
+  background-image: url("https://wallup.net/wp-content/uploads/2016/03/09/213441-code-The_Matrix-green-movies.jpg");
+  background-size: cover;
+  color: #61de2a;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-input,
-textarea {
-  font: inherit;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-textarea {
-  resize: none;
+html {
+  box-sizing: border-box;
 }
 
 img {
@@ -39,17 +31,27 @@ img {
   height: auto;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+ul,
+ol {
   list-style: none;
 }
 
-button {
-  cursor: pointer;
-  font-family: inherit;
+a {
+  text-decoration: none;
 }
 
-label {
-  cursor: pointer;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.list {
+  list-style: none;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
 }
